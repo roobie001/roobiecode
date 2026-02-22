@@ -1,7 +1,9 @@
+import ProjectsSection from "../components/ProjectsSection";
+
 function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <ProjectsSection />
     </div>
   );
 }

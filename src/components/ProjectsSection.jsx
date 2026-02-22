@@ -1,8 +1,65 @@
+import ProjectCard from "./ProjectCard";
+import omnifood from "../assets/omnifood.png";
+import learnify from "../assets/learnify.png";
+import todo from "../assets/todo.png.jpeg";
+
+const projects = [
+  {
+    name: "Learnify",
+    image: learnify,
+    description:
+      "Fullstack Learning Management system with clerkAuth, cloudinary and stripe",
+    liveLink: "https://lms-frontend-six-bice.vercel.app/",
+    githubLink: "",
+    stacks: ["mongoDB", "expressJs", "nodeJs", "React", "Tailwind CSS"],
+  },
+  {
+    name: "Omnifood",
+    image: omnifood,
+    description: `A food subscription landing page built using modern UI concepts and responsive design.`,
+    liveLink: "https://omnifood-roobie.netlify.app/",
+    githubLink: "https://github.com/roobie001/omnifood-project",
+    stacks: ["HTML", "CSS", "javaScript"],
+  },
+  {
+    name: "SomethingTodo",
+    image: todo,
+    description: `A mini Todo app built with react and tailwind`,
+    liveLink: "",
+    githubLink: "https://github.com/roobie001/Todo-App",
+    stacks: ["reactJs", "Tailwind CSS"],
+  },
+
+  {
+    name: "Omnifood",
+    image: omnifood,
+    description: `A food subscription landing page built using modern UI concepts and responsive design.`,
+    liveLink: "https://omnifood-roobie.netlify.app/",
+    githubLink: "https://github.com/roobie001/omnifood-project",
+    stacks: ["HTML", "CSS", "javaScript"],
+  },
+];
+
 function ProjectsSection() {
   return (
-    <div>
-      <h2>Project section</h2>
-    </div>
+    <section className="min-h-screen bg-indigo-950 pt-[6rem] pb-16">
+      <div className="max-w-[92rem] mx-auto px-4">
+        <h1 className="text-center pb-3 font-bold text-gray-300 text-2xl uppercase mb-12">
+          My <span className="text-blue-500">projects</span>
+        </h1>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* <ProjectCard
+            liveLink="https://lms-frontend-six-bice.vercel.app/"
+            imgLink={learnify}
+            name="Learnify"
+          /> */}
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
 
