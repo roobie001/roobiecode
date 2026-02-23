@@ -1,66 +1,49 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
-
 function Navbar() {
-  const navigate = useNavigate();
   return (
-    <nav className="w-full bg-indigo-950 text-white">
-      <div className=" max-w-[81rem] mx-auto flex justify-between md:px-4 lg:px-0 px-6 py-6 items-center">
-        <h1
-          className="font-bold text-2xl cursor-pointer"
-          onClick={() => navigate("/")}
+    <nav className="w-full bg-indigo-950 text-white sticky top-0 z-50">
+      <div className="max-w-[81rem] mx-auto flex justify-between items-center px-6 md:px-4 lg:px-0 py-6">
+        {/* Logo */}
+        <a
+          href="#home"
+          className="font-bold text-2xl cursor-pointer hover:text-blue-400 transition"
         >
           ROOBIECODE
-        </h1>
+        </a>
 
-        <ul className="flex gap-6 justify-between">
+        {/* Navigation Links */}
+        <ul className="flex gap-8">
           <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive ? "text-blue-500" : "text-white hover:text-blue-300"
-              }
-            >
+            <a href="#home" className="hover:text-blue-300 transition">
               HOME
-            </NavLink>
+            </a>
           </li>
+
           <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                isActive ? "text-blue-500" : "text-white hover:text-blue-300"
-              }
-            >
+            <a href="#about" className="hover:text-blue-300 transition">
               ABOUT
-            </NavLink>
+            </a>
           </li>
+
           <li>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive ? "text-blue-500" : "text-white hover:text-blue-300"
-              }
-            >
+            <a href="#projects" className="hover:text-blue-300 transition">
               PROJECTS
-            </NavLink>
+            </a>
           </li>
+
           <li>
-            <NavLink
-              to="/experience"
-              className={({ isActive }) =>
-                isActive ? "text-blue-500" : "text-white hover:text-blue-300"
-              }
-            >
+            <a href="#experience" className="hover:text-blue-300 transition">
               EXPERIENCE
-            </NavLink>
+            </a>
           </li>
         </ul>
 
-        <Link
-          to="/contact"
-          className="uppercase px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-800 rounded"
+        {/* Contact Button */}
+        <a
+          href="#contact"
+          className="uppercase px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-800 rounded-lg hover:opacity-90 transition duration-300"
         >
           Contact
-        </Link>
+        </a>
       </div>
     </nav>
   );
