@@ -42,18 +42,13 @@ const projects = [
 
 function ProjectsSection() {
   return (
-    <section className="min-h-screen bg-indigo-950 pt-[6rem] pb-16">
-      <div className="max-w-[92rem] mx-auto px-4">
-        <h1 className="text-center pb-3 font-bold text-gray-300 text-2xl uppercase mb-12">
-          My <span className="text-blue-500">projects</span>
-        </h1>
+    <section className="w-full bg-indigo-950 text-white py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
+          My <span className="text-[#1E90FF]">Projects</span>
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* <ProjectCard
-            liveLink="https://lms-frontend-six-bice.vercel.app/"
-            imgLink={learnify}
-            name="Learnify"
-          /> */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
