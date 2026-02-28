@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function AboutSection() {
   return (
-    <div className="w-full min-h-screen bg-indigo-950 text-white px-6 md:px-12 lg:px-24 py-20">
+    <div className="w-full min-h-screen bg-indigo-950/90 text-white px-6 md:px-12 lg:px-24 py-20">
       <div className="max-w-[81rem] mx-auto md:px-4 lg:px-0 px-6 py-6 pt-[9rem] flex items-center justify-between lg:flex-row flex-col ">
         {/* left */}
         <div className="flex flex-1 justify-center items-center hidden lg:flex">
