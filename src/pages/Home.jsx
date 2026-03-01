@@ -16,12 +16,12 @@ function Home() {
         <AboutSection />
       </section>
 
-      <section id="skills">
-        <Skills />
-      </section>
-
       <section id="projects">
         <ProjectsSection />
+      </section>
+
+      <section id="skills">
+        <Skills />
       </section>
 
       <section id="contact">

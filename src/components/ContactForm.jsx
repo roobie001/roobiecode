@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 
 function Contact() {
@@ -6,6 +7,7 @@ function Contact() {
     name: "",
     email: "",
     message: "",
+    company: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -25,6 +27,11 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    // BOT CHECK
+    if (form.company) {
+      return;
+    }
+
     const error = validate();
     if (error) {
       toast.error(error);
@@ -34,13 +41,20 @@ function Contact() {
     try {
       setLoading(true);
 
-      // simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-
+      await emailjs.send(
+        import.meta.env.VITE_EMAIL_SERVICE,
+        import.meta.env.VITE_EMAIL_TEMPLATE,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+        },
+        import.meta.env.VITE_EMAIL_KEY,
+      );
       toast.success("Message sent successfully 🚀");
       setForm({ name: "", email: "", message: "" });
-    } catch (err) {
-      toast.error("Something went wrong");
+    } catch (error) {
+      toast.error(error.message || "Failed to send message");
     } finally {
       setLoading(false);
     }
@@ -95,6 +109,14 @@ function Contact() {
               placeholder="Tell me about your project..."
             />
           </div>
+
+          {/* spam block */}
+          <input
+            type="text"
+            name="company"
+            style={{ display: "none" }}
+            onChange={handleChange}
+          />
 
           {/* Button */}
           <button

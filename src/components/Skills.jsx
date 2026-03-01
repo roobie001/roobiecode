@@ -15,7 +15,7 @@ const iconStyle =
 
 function Skills() {
   return (
-    <section className="w-full py-20 px-6">
+    <section className="w-full py-20 px-6 bg-indigo-950">
       <div className="max-w-6xl mx-auto">
         <h2 className={sectionTitle}>Skills</h2>
 

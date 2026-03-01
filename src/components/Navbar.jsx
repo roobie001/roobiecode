@@ -32,6 +32,11 @@ function Navbar() {
               Projects
             </a>
           </li>
+          <li>
+            <a href="#skills" className="hover:text-white transition-colors">
+              Skills
+            </a>
+          </li>
         </ul>
 
         {/* Desktop CTA */}
