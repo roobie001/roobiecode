@@ -17,13 +17,17 @@ function Hero() {
           </h2>
 
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-            <button className="px-8 py-3 bg-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 shadow-[0_0_20px_rgba(30,144,255,0.25)]">
-              View Projects
-            </button>
+            <a href="#projects">
+              <button className="px-8 py-3 bg-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 shadow-[0_0_20px_rgba(30,144,255,0.25)]">
+                View Projects
+              </button>
+            </a>
 
-            <button className="px-8 py-3 border border-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:bg-[#1E90FF]/10">
-              Download Resume
-            </button>
+            <a href="/cv/OGBODO-OBIAJULU-CV.pdf" download>
+              <button className="px-8 py-3 border border-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:bg-[#1E90FF]/10">
+                Download CV
+              </button>
+            </a>
           </div>
         </div>
 

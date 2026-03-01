@@ -27,8 +27,6 @@ function Home() {
       <section id="contact">
         <ContactForm />
       </section>
-
-      <Footer />
     </>
   );
 }

@@ -10,9 +10,9 @@ function Navbar() {
         {/* Logo */}
         <a
           href="#home"
-          className="text-xl font-bold tracking-wide hover:text-[#1E90FF] transition-colors duration-300"
+          className="text-xl text-white/80 font-bold tracking-wide hover:text-[#1E90FF] transition-colors duration-300"
         >
-          Roobie<span className="text-[#1E90FF]">.</span>
+          Roobiecode<span className="text-[#1E90FF]">.</span>
         </a>
 
         {/* Desktop Links */}
@@ -97,6 +97,16 @@ function Navbar() {
                 Projects
               </a>
             </li>
+            <li>
+              <a
+                href="#skills"
+                onClick={() => setIsOpen(false)}
+                className="hover:text-white transition-colors"
+              >
+                Skills
+              </a>
+            </li>
+
             <li>
               <a
                 href="#contact"

@@ -38,12 +38,12 @@ function AboutSection() {
             real-world applications like a Learning Management System.
           </p>
 
-          <Link
-            to="/contact"
+          <a
+            href="#contact"
             className="inline-block px-8 py-3 bg-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 shadow-[0_0_20px_rgba(30,144,255,0.25)]"
           >
             Let’s Work Together
-          </Link>
+          </a>
         </div>
       </div>
     </section>
