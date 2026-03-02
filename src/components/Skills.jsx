@@ -6,6 +6,8 @@ import {
   SiMongodb,
   SiVercel,
   SiPostman,
+  SiJavascript,
+  SiPostgresql,
 } from "react-icons/si";
 
 const sectionTitle = "text-white text-3xl font-bold text-center mb-12";
@@ -24,6 +26,10 @@ function Skills() {
           <div>
             <h3 className={categoryTitle}>Frontend</h3>
             <div className="grid grid-cols-2 gap-8">
+              <div className="flex flex-col items-center gap-2">
+                <SiJavascript size={48} className={iconStyle} />
+                <span className="text-white">JavaScript</span>
+              </div>
               <div className="flex flex-col items-center gap-2">
                 <FaReact size={48} className={iconStyle} />
                 <span className="text-white">React</span>
@@ -58,6 +64,10 @@ function Skills() {
               <div className="flex flex-col items-center gap-2">
                 <SiMongodb size={48} className={iconStyle} />
                 <span className="text-white">MongoDB</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <SiPostgresql size={48} className={iconStyle} />
+                <span className="text-white">Postgres</span>
               </div>
             </div>
           </div>

@@ -3,7 +3,6 @@ import AboutSection from "../components/AboutSection";
 import Skills from "../components/Skills";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
 
 function Home() {
   return (

@@ -51,7 +51,7 @@ function Contact() {
         },
         import.meta.env.VITE_EMAIL_KEY,
       );
-      toast.success("Message sent successfully 🚀");
+      toast.success("Message sent successfully!");
       setForm({ name: "", email: "", message: "" });
     } catch (error) {
       toast.error(error.message || "Failed to send message");
@@ -122,6 +122,7 @@ function Contact() {
           <button
             type="submit"
             disabled={loading}
+            onClick={handleSubmit}
             className="w-full py-3 bg-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:brightness-110 hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? "Sending..." : "Send Message"}

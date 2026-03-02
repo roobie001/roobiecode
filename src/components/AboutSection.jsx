@@ -1,50 +1,38 @@
-import profileImg from "../assets/profile_picture.jpg";
-import { Link } from "react-router-dom";
-
 function AboutSection() {
   return (
-    <section className="w-full bg-indigo-950 text-white py-24 px-6">
-      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-        {/* LEFT IMAGE */}
-        <div className="hidden lg:flex justify-center">
-          <div className="relative w-80 h-80">
-            {/* Soft Glow */}
-            <div className="absolute inset-0 bg-[#1E90FF]/20 blur-2xl rounded-2xl"></div>
+    <section
+      id="about"
+      className="w-full bg-gradient-to-b from-indigo-950 to-black py-24"
+    >
+      <div className="max-w-4xl mx-auto px-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          About <span className="text-[#1E90FF]">Me</span>
+        </h2>
 
-            <img
-              src={profileImg}
-              alt="Roobie"
-              className="relative w-full h-full object-cover rounded-2xl shadow-2xl"
-            />
-          </div>
-        </div>
+        <p className="text-gray-300 text-lg leading-relaxed mb-6">
+          I’m a Frontend Developer based in Nigeria, passionate about building
+          responsive, scalable, and user-focused web applications using modern
+          JavaScript technologies. I enjoy transforming UI designs into clean,
+          maintainable, and high-performance interfaces.
+        </p>
 
-        {/* RIGHT CONTENT */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">
-            About <span className="text-[#1E90FF]">Me</span>
-          </h2>
+        <p className="text-gray-400 text-lg leading-relaxed mb-10">
+          My core stack includes{" "}
+          <span className="text-white font-medium">React</span>,{" "}
+          <span className="text-white font-medium">Next.js</span>,{" "}
+          <span className="text-white font-medium">Tailwind CSS</span>, and{" "}
+          <span className="text-white font-medium">Node.js</span>. I’m currently
+          expanding deeper into full-stack development while building real-world
+          applications like a Learning Management System.
+        </p>
 
-          <p className="text-gray-300 text-lg leading-relaxed mb-6">
-            I’m a Frontend Developer based in Nigeria, focused on building
-            responsive and scalable web applications with modern JavaScript
-            technologies. I enjoy transforming UI designs into clean,
-            maintainable, and performant interfaces.
-          </p>
-
-          <p className="text-gray-400 text-lg leading-relaxed mb-8">
-            My core stack includes React, Next.js, Tailwind CSS, and Node.js.
-            I’m currently expanding into full-stack development while building
-            real-world applications like a Learning Management System.
-          </p>
-
-          <a
-            href="#contact"
-            className="inline-block px-8 py-3 bg-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 shadow-[0_0_20px_rgba(30,144,255,0.25)]"
-          >
-            Let’s Work Together
-          </a>
-        </div>
+        {/* CTA */}
+        <a
+          href="#contact"
+          className="inline-block px-8 py-3 bg-[#1E90FF] text-white rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:brightness-110 shadow-[0_0_20px_rgba(30,144,255,0.25)]"
+        >
+          Let’s Work Together
+        </a>
       </div>
     </section>
   );
