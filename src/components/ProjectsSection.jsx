@@ -1,6 +1,7 @@
 import ProjectCard from "./ProjectCard";
 import omnifood from "../assets/omnifood.png";
 import learnify from "../assets/learnify.png";
+import freelanceP from "../assets/freelanceP.png";
 import todo from "../assets/todo.png.jpeg";
 
 const projects = [
@@ -10,8 +11,26 @@ const projects = [
     description:
       "Fullstack Learning Management system with Clerk Auth, Cloudinary and Stripe integration.",
     liveLink: "https://lms-frontend-six-bice.vercel.app/",
-    githubLink: "",
+    githubLink: "https://github.com/roobie001/roobie-lms",
     stacks: ["MongoDB", "Express", "Node.js", "React", "Tailwind CSS"],
+    featured: true,
+  },
+  {
+    name: "FreelancePay Agent",
+    image: freelanceP,
+    description:
+      "Decentralized freelance escrow platform that secures payments between clients and freelancers using smart contracts. Features milestone-based payouts, AI-powered dispute resolution, built on celo blockchain.",
+    liveLink: "https://freelancepay-agent.vercel.app/",
+    githubLink: "https://github.com/roobie001/freelancepay-agent",
+    stacks: [
+      "Next.js",
+      "Node.js",
+      "Solidity",
+      "Celo",
+      "MetaMask",
+      "supabase",
+      "Tailwind CSS",
+    ],
     featured: true,
   },
   {

@@ -4,7 +4,7 @@ function AboutSection() {
       id="about"
       className="w-full bg-gradient-to-b from-indigo-950 to-black py-24"
     >
-      <div className="max-w-4xl mx-auto px-6 text-center">
+      <div className="max-w-4xl mx-auto px-6 text-center ">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           About <span className="text-[#1E90FF]">Me</span>
         </h2>
