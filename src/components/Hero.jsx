@@ -23,7 +23,7 @@ function Hero() {
               </button>
             </a>
 
-            <a href="/cv/OGBODO-OBIAJULU-CV.pdf" download>
+            <a href="/cv/Obiajulu_CV.pdf" download>
               <button className="px-8 py-3 border border-[#1E90FF] rounded-lg font-medium transition-all duration-300 hover:bg-[#1E90FF]/10">
                 Download CV
               </button>
