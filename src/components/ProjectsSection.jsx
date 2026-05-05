@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import omnifood from "../assets/omnifood.png";
 import learnify from "../assets/learnify.png";
 import freelanceP from "../assets/freelanceP.png";
-import todo from "../assets/todo.png.jpeg";
+import blitzquiz from "../assets/blitzquiz.png";
 
 const projects = [
   {
@@ -34,20 +34,29 @@ const projects = [
     featured: true,
   },
   {
+    name: "BlitzQuiz",
+    image: blitzquiz,
+    description: "Fast-paced onchain quiz game built for Celo Proof of Ship.",
+    // liveLink: "https://your-live-link.com/",
+    githubLink: "https://github.com/roobie001/word-hustle-bloom", // replace if different repo
+    stacks: [
+      "React",
+      "Vite",
+      "Solidity",
+      "Celo",
+      "MiniPay",
+      "viem",
+      "Tailwind CSS",
+    ],
+    featured: false,
+  },
+  {
     name: "Omnifood",
     image: omnifood,
     description: `A food subscription landing page built using modern UI concepts and responsive design.`,
     liveLink: "https://omnifood-roobie.netlify.app/",
     githubLink: "https://github.com/roobie001/omnifood-project",
     stacks: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    name: "SomethingTodo",
-    image: todo,
-    description: `A mini Todo app built with react and tailwind`,
-    liveLink: "",
-    githubLink: "https://github.com/roobie001/Todo-App",
-    stacks: ["React", "Tailwind CSS"],
   },
 ];
 
